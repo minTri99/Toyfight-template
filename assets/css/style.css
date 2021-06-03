@@ -1,0 +1,145 @@
+:root{
+    --Sectra-font: 'Sectra';
+    --Ginger-regula:'Ginger-regular';
+    --Ginger-bold:'Ginger-bold';
+}
+@font-face {
+  font-family: "Sectra";
+  src: url("../font/GT-Sectra-Book.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Ginger-regular";
+  src: url("../font/f37ginger-regular-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Ginger-bold";
+  src: url("../font/f37ginger-bold-webfont.woff") format("woff");
+}
+
+body,
+html {
+  min-height: 100%;
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  font-family: "Sectra";
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+a {
+  display: block;
+  font-family: "Ginger Bold";
+  font-size: 10.5px;
+  letter-spacing: 0.1em;
+}
+h1,
+.huge-text,
+.gigantic-text,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Ginger Bold";
+  letter-spacing: -0.05em;
+}
+h1,
+.huge-text,
+.gigantic-text,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Ginger Bold";
+  letter-spacing: -0.05em;
+}
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 2.5em;
+  }
+}
+h2 {
+  font-size: 42px;
+  margin-bottom: 0.5em;
+  line-height: 1.2em;
+  letter-spacing: -0.04em;
+}
+@media only screen and (max-width: 800px) {
+  h2 {
+    font-size: 20px;
+  }
+}
+h3 {
+  font-size: 11px;
+  padding-bottom: 2.2em;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+@media only screen and (max-width: 800px) {
+  h3 {
+    font-size: 10px;
+  }
+}
+h4 {
+  font-family: "Ginger Regular";
+  font-size: 24px;
+  margin-bottom: 0.5em;
+  color: #212121;
+}
+@media only screen and (max-width: 800px) {
+  h4 {
+    font-size: 16px;
+  }
+}
+
+h5 {
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  letter-spacing: 0.15em;
+}
+@media only screen and (max-width: 800px) {
+  h5 {
+    font-size: 10px;
+  }
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.7em;
+  letter-spacing: -0.02em;
+  font-family: "Ginger Regular";
+}
+@media only screen and (max-width: 800px) {
+  p {
+    font-size: 12px;
+  }
+}
+.full-size {
+  width: 100%;
+  height: 100%;
+}
+
+.viewport-full-size {
+  width: 100vw;
+  height: 100vh;
+}
+
+.full-width {
+  width: 100%;
+}
