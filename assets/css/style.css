@@ -1,39 +1,23 @@
 :root{
-    --Sectra-font: 'Sectra';
-    --Ginger-regula:'Ginger-regular';
-    --Ginger-bold:'Ginger-bold';
+    --Noodle: 'Noodle';
+    --Helvetica:'Helvetica';
+    --glyphicons:'glyphicons';
 }
 @font-face {
-  font-family: "Sectra";
-  src: url("../font/GT-Sectra-Book.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Ginger-regular";
-  src: url("../font/f37ginger-regular-webfont.woff") format("woff");
+  font-family: "Noodle";
+  src: url("../font/big_noodle.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Ginger-bold";
-  src: url("../font/f37ginger-bold-webfont.woff") format("woff");
+  font-family: "Helvetica";
+  src: url("../font/HelveticaNeueLTPro-LtCn.woff") format("woff");
 }
 
-body,
-html {
-  min-height: 100%;
-  width: 100%;
-  position: relative;
-  background-color: #fff;
-  font-family: "Sectra";
-  text-align: center;
+@font-face {
+  font-family: "glyphicons";
+  src: url("../font/glyphicons-halflings-regular.woff2") format("woff2");
 }
-
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-ul li {
+*{
   margin: 0;
   padding: 0;
 }
@@ -43,103 +27,117 @@ ol {
   list-style: none;
 }
 a {
+  text-decoration: none;
+  color: inherit;
+}
+.hiddenOverflow {
+  overflow: hidden;
+}
+.DesktopNav {
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+.navBTT {
   display: block;
-  font-family: "Ginger Bold";
-  font-size: 10.5px;
-  letter-spacing: 0.1em;
+  letter-spacing: 2.2px;
+  margin-bottom: 10px;
+  text-align: left;
+  position: relative;
+  cursor: pointer;
+  max-width: 150px;
+  color: white;
+  background-color: black;
+  padding: 4px 10px 4px 10px;
+  font-family: "Noodle";
+  font-size: 17px;
+  text-decoration: none;
+  z-index: 120;
+  margin-top: 160px;
+  transition: 0.5s;
 }
-h1,
-.huge-text,
-.gigantic-text,
-h2,
-h3,
-h4,
-h5 {
-  font-family: "Ginger Bold";
-  letter-spacing: -0.05em;
-}
-h1,
-.huge-text,
-.gigantic-text,
-h2,
-h3,
-h4,
-h5 {
-  font-family: "Ginger Bold";
-  letter-spacing: -0.05em;
-}
-@media screen and (max-width: 800px) {
-  h1 {
-    font-size: 2.5em;
-  }
-}
-h2 {
-  font-size: 42px;
-  margin-bottom: 0.5em;
-  line-height: 1.2em;
-  letter-spacing: -0.04em;
-}
-@media only screen and (max-width: 800px) {
-  h2 {
-    font-size: 20px;
-  }
-}
-h3 {
-  font-size: 11px;
-  padding-bottom: 2.2em;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-}
-@media only screen and (max-width: 800px) {
-  h3 {
-    font-size: 10px;
-  }
-}
-h4 {
-  font-family: "Ginger Regular";
-  font-size: 24px;
-  margin-bottom: 0.5em;
-  color: #212121;
-}
-@media only screen and (max-width: 800px) {
-  h4 {
-    font-size: 16px;
-  }
-}
-
-h5 {
-  font-size: 12px;
-  text-transform: uppercase;
-  margin-bottom: 5px;
-  letter-spacing: 0.15em;
-}
-@media only screen and (max-width: 800px) {
-  h5 {
-    font-size: 10px;
-  }
-}
-
-p {
-  font-size: 16px;
-  line-height: 1.7em;
-  letter-spacing: -0.02em;
-  font-family: "Ginger Regular";
-}
-@media only screen and (max-width: 800px) {
-  p {
-    font-size: 12px;
-  }
-}
-.full-size {
-  width: 100%;
+.navBTT::after {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
   height: 100%;
+  background-color: #ef4035 !important;
+  z-index: -1;
+  transition: 0.25s;
 }
-
-.viewport-full-size {
-  width: 100vw;
-  height: 100vh;
-}
-
-.full-width {
+.navBTT:hover:after {
   width: 100%;
+}
+.row.no-gutters>*{
+  padding-left: 0;
+  padding-right: 0;
+}
+#mainPandaLogo {
+  pointer-events: all;
+  cursor: pointer;
+}
+.pandaLogo {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  background: url("../image/PandaLogo.png") no-repeat center center;
+  width: 79px;
+  height: 171px;
+  display: inline-block;
+}
+#socialMenu {
+  margin-top: 10px;
+  position: fixed;
+  right: 10px;
+  left: auto;
+  z-index: 99;
+}
+.socialIcons{
+  opacity: 0.6;
+  transition: 0.25s ease;
+}
+.socialIcons:hover {
+  opacity: 1;
+}
+
+/* Main page */
+.topPagePadding {
+  padding-top: 270px;
+}
+.onlyMobile{
+  display: none;
+}
+#pandaBot {
+  display: inline-block;
+  position: relative;
+  width: 427px;
+  height: 445px;
+  top: 50px;
+  background: url("../image/pandaBot.gif") no-repeat center center;
+}
+.EmptyRowSpace140 {
+  height: 80px;
+}
+
+
+/*  */
+.smallNaslov {
+  font-family: var(--Helvetica);
+  padding-top: 0px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  text-align: center;
+  color: #cbcbcb;
+}
+.clientLogos {
+  width: 100%;
+  min-height: 128px;
+  margin-bottom: 100px;
+  background: url('../image/logosmerged.png') no-repeat center center;
+  background-size: contain;
+  /* max-width: 601px; */
+  display: inline-block;
+  opacity: 0.7;
 }
