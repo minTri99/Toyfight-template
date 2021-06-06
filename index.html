@@ -13,14 +13,13 @@
     />
     <!-- style css -->
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>ToyFight</title>
+    <title>Panda Monk</title>
   </head>
   <body>
     <div class="DesktopNav">
       <div class="container-fluid">
         <div class="row no-gutters">
-          <div class="col-lg-2 col-md-2  col-sm-2">
-          </div>
+          <div class="col-lg-2 col-md-2 col-sm-2"></div>
           <div class="col-lg-2 col-md-2 col-sm-2 hiddenOverflow">
             <a href="./index.html">
               <div id="HomeBtt" class="navBTT">HOME</div>
@@ -42,18 +41,17 @@
             </a>
           </div>
           <div class="col-lg-2 col-md-2 col-sm-2 hiddenOverflow">
-            <div id="mainPandaLogo" class="pandaLogo">
-            </div>
+            <div id="mainPandaLogo" class="pandaLogo"></div>
           </div>
         </div>
       </div>
     </div>
     <div id="socialMenu">
       <a href="" class="socialIcons">
-        <img src="./assets/image/twitter2.png" alt="">
+        <img src="./assets/image/twitter2.png" alt="" />
       </a>
       <a href="" class="socialIcons">
-        <img src="./assets/image/behance2.png" alt="">
+        <img src="./assets/image/behance2.png" alt="" />
       </a>
     </div>
     <div class="barba-wrapper">
@@ -63,30 +61,114 @@
             <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
               <div class="pandaLogo onlyMobile"></div>
             </div>
-            <div class="col-lg-4 col-md-6  col-sm-6 col-xs-12 alignOnMobile">
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 alignOnMobile">
               <div id="pandaBot"></div>
             </div>
-            <div id="homeNaslov1" class="col-lg-2 col-md-4 col-sm-4 col-xs-12 alignOnMobile"></div>
-            <div id="homeNaslov6" class="col-lg-2 col-md-4 col-sm-4 notOnMedium"></div>
+            <div
+              id="homeNaslov1"
+              class="col-lg-2 col-md-4 col-sm-4 col-xs-12 alignOnMobile"
+            >
+              <div class="MediumNaslov">
+                DIGITAL PRODUCTION
+                <br />
+                AND MARKETING
+              </div>
+              <div class="VelikiNaslov">
+                CRAFTED
+                <br />
+                WITH
+                <br />
+              </div>
+              <div class="VelikiNaslov mt-lg-2 mb-lg-2">
+                <span class="backgroundText">CARE</span>
+              </div>
+              <div class="breakLine"></div>
+              <div class="smallTekst">
+                Hello and welcome to Panda Monk. We're an independent digital
+                production and marketing studio from Zagreb, Croatia.
+              </div>
+            </div>
+            <div
+              id="homeNaslov6"
+              class="col-lg-2 col-md-4 col-sm-4 notOnMedium">
+              <div class="smallNaslov">
+                <b>MORE ABOUT US</b>
+              </div>
+              <a href="" class="ServicesCall"><div class="slimBTT">OUR SERVICES</div></a>
+              <a href="" class="ServicesCall"><div class="slimBTT">OUR APPROACH</div></a>
+              <div class="breakLine"></div>
+              <div class="smallNaslov">
+                <b>RECENT PROJECTS</b>
+              </div>
+              <div class="slimBTT scrollTolink">
+                BMW X1 SALE CAMPAIGN
+              </div>
+              <div class="slimBTT scrollTolink">
+                T-COM CHRISTMAS STORY
+              </div>
+              <div class="slimBTT scrollTolink">
+                BANNER SHOWREEL
+              </div>
+              <a href="">
+                <div class="slimBTT">MORE</div>
+              </a>
+            </div>
           </div>
           <div class="row EmptyRowSpace140"></div>
           <div class="row EmptyRowSpace140"></div>
           <div class="row" id="clientsRow">
-            <div class="smallNaslov">
-              SOME OF THE CLIENTS WHO TRUST US
-            </div>
+            <div style="text-align: center; color: #cbcbcb;" class="smallNaslov">SOME OF THE CLIENTS WHO TRUST US</div>
             <div id="clients" class="clientLogos"></div>
+          </div>
+          <div id="RecentCasesWrapper" class="mb-lg-5">
+            <div id="recentCase"></div>
+            <div id="RecentCasesBlackCont">
+              <div id="rukaMidLijeva"></div>
+              <div id="rukaMidDesna"></div>
+              <div id="RecentNaslov" class="recentNaslov">RECENT CASES</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="container-fluid">
+                <div class="row LargeImageRow" id="BMWCaseStart">
+                  <div id="trigger2"></div>
+                  <a href="">
+                    <div id="BMWLarge" class="caseContFrontpage">
+                      <div class="projectOverlayBig">
+                        <div class="innerRedContBig"></div>
+                        <div class="iconRow">
+                          <div class="WorkIcon caseIco"> </div>
+                          <div class="WorkIcon movieIco"></div>
+                          <div class="WorkIcon awardIco"></div>
+                        </div>
+                        <div class="viewProject">VIEW CASE</div>
+                      </div>
+                      <div id="redOverlay01"></div>
+                      <div id="BMWAwardRibbon" class="onlyMobile ribbonMobileFix">
+                        <div class="AwardsRibbontxt">AWARDED</div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6"></div>
           </div>
         </div>
       </div>
     </div>
+    <!-- GSAP framworks -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <!-- Scrolltrigger plusgin -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+    <!-- Jquery -->
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
+    <!-- Main app js -->
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
